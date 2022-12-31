@@ -1,0 +1,304 @@
+html{
+  background-color:#000000;
+  font-size: 16px;
+  /*display: flex;
+  flex-direction: column;*/
+  font-family: 'Caveat', cursive;
+}
+/* Navigation and logo*/
+
+.logo{
+  width: 100px;
+  height: 100px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 80%;
+}
+.navheader{
+  padding-top: 15px;
+  margin-top: 0;
+  display: flex;
+  position:fixed;
+  flex-direction: row; 
+  width: 98.8%;
+  background-color:#E08610;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.nav{
+  display: flex;
+  font-size: 1.2rem;
+}
+.nav a{
+  text-decoration: none;
+  margin-left: 30px;
+  margin-right: 15px;
+ color:#635B51;
+}
+
+.text{
+  z-index: 2;
+  text-align: center;
+  width: auto;
+  color: #635B51;
+ 
+ 
+}
+
+/*  Pizza description   */
+
+#who{
+  padding-top: 50px;
+}
+
+.text p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#E08610;
+  width: 300px;
+  height: 300px;
+  margin-top: 120px; 
+  border-radius: 12px;
+  border: 2px solid #635B ;
+  font-size: 2rem;
+}
+
+
+
+/*  Background Image     */
+.mesapizza{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+   z-index:-1;
+   margin-top: 200px;
+ 
+}
+
+.tabua{
+   width: 95%;
+}
+
+/*  TOP 3 Pizzas Menu       */
+
+.toppizzas{
+  padding-top: 15px;
+  width: 300px;
+  border-radius:100%;
+  box-shadow: 10px 5px 5px black;
+}
+.top3{
+ padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color:#FFA32Bff;
+  padding-bottom: 100px;
+  
+ 
+
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color :#635B51;
+  background-color: #f5ae08;
+  margin-top: 400px;
+  
+  }
+  .top h2{
+    margin-top: 50px;
+  }
+.names{
+  border: 2px solid #635b516c ;
+  width: 380px;
+  border-radius: 10%;
+  background-color:#ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 5px 5px black;
+
+}
+.names h2{
+  color:#635B51;
+}
+.toppings{
+  font-size: 1.2rem;
+  width: 250px;
+  text-align: center;
+}
+
+
+ /* CEO STORIE    */ 
+
+ 
+.ceo{
+  width: 100%;
+  padding-top: 150px;
+  background-color: #E08610;
+}
+
+.ceo h2{
+  color: #635B51;
+  width: 500px;
+  align-items: center;
+  font-family:'Kalam', cursive;
+  font-size: 20px;
+  align-items: center;
+  border-right:2px solid #f9f6f3;
+  padding-right: 100px;
+  text-align: justify;
+}
+.leofoto{
+  
+  width: 240px;
+  background-image: radial-gradient(#837e7a4b,#E08610, #635B51);
+  height: 380px;
+  border-left: 1px solid black;
+  padding-left: 30px;
+  background-color: #837e7a4b;
+  border-radius: 12%;
+
+}
+.ceobio{
+  display: flex;
+  align-items: center;
+  background-color: #E08610;
+  font-size: 1.4rem;
+  justify-content: space-around;
+  margin-bottom: 0;
+  
+}
+
+/*  Location   */
+.adress{
+  display: flex;
+  flex-flow: column;
+  
+  align-items: center;
+  margin-top: 0;
+  padding-top: 50px;
+  width: 100%;
+  height: 300px;
+  background-color: #E08610;
+margin-bottom: 0;
+}
+
+
+
+/*  FOOTER   */
+
+
+footer{
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px  12px 0 8px;
+  margin-top: 0;
+  background-color: #E08610;
+}
+
+
+/* Responsive Layout  */
+
+
+@media only screen and (max-width:760px ){
+  .top3{
+    
+    flex-wrap: wrap;
+    flex-flow: column;
+    margin-top: 30px;
+    align-items: center; 
+    margin-top: 0;
+    
+  }
+  .toppizzas{
+    width: 230px;
+
+  }
+
+  .nav {
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    
+  }
+  #who{
+    padding-top: 80px;
+  }
+  .names{
+    margin-top: 20px;
+    width: 300px;
+    height: 320px;
+  }
+  .toppings{
+    margin-top: 0;
+    font-size: 1.2rem;
+    width: 220px;
+  }
+ 
+  .pizza{
+    width: 0;
+  }
+
+  .ceobio{
+    display:flex;
+      flex-direction:column-reverse;
+      justify-content: center;
+  
+        
+  }
+
+  .leofoto{
+  
+    width: 150px;
+    height: auto;
+      
+  }
+  .ceo h2{
+    width: 300px;
+    margin-left: 15%;
+    font-family:'Kalam', cursive;
+    font-size: 1.2rem;
+    border-right: none;
+    justify-items: center;
+      }
+  .mesapizza{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+     z-index:-1;
+     margin-top: 400px;
+   
+  }
+
+  .text p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#E08610;
+    width: auto;
+    height: 120px;
+    margin-top: 120px; 
+    border-radius: 12px;
+    border: 2px solid #635B ;
+    font-size: 1.5rem;
+  }
+  
+  .navheader{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column; 
+     width: 96.7%;
+     justify-content: space-evenly;
+  
+  }
+
+}
